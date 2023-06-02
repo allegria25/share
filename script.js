@@ -10,7 +10,8 @@ function shareLink() {
     if (navigator.share) {
       navigator.share({
         title: document.title,
-        url: location.href 
+        url: 'https://www.laxmarket.store'
+        // url: location.href 
       })
       .then(() => console.log('Lien partagé avec succès'))
       .catch((error) => console.error('Erreur lors du partage :', error));
